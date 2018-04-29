@@ -1,0 +1,97 @@
+body{
+  margin-top:55px;
+  font-size:16px;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family:Poppins;
+}
+
+p{
+  font-family:Roboto;
+}
+
+.navbar-default{
+  background:black;
+  border:0;
+  font-family:Poppins;
+  
+
+}
+
+.navbar-brand{
+  font-size:20px;
+  color:white !important;
+  font-weight:bold;
+  font-size: xx-large;
+}
+
+#showcase h1{
+  font-size:50px;
+  margin-bottom:20px;
+}
+
+#showcase img{
+  max-width:90%;
+  margin-left:60px;
+  margin-top: 80px;
+}
+
+#showcase .showcase-right{
+  margin-top:90px;
+  font-family:Poppins;
+}
+
+#testimonial{
+  background:#f1f1f1;
+  padding: 50px 0 30px 0;
+  text-align:center;
+  margin-top:40px;
+}
+
+#testimonial p{
+  font-size:32px;
+  font-family: 'Josefin Sans';
+  color:#000;
+}
+
+#testimonial p.customer{
+  font-size:20px;
+  color:#666;
+}
+
+
+#info1 .info-right{
+  margin-top:90px;
+}
+
+#info2{
+  margin:20px 0 60px 0;
+}
+
+#info3 .info-right{
+  margin-top:90px;
+}
+
+#contact{
+  background:url(../img/ani.JPG);
+  padding:40px;
+  color:#fff;
+  border-top:#333 7px solid;
+  border-bottom:#333 7px solid;
+}
+
+footer{
+  padding:30px;
+}
+
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+
+
+* { color:black; text-decoration: none;}
+
+  
