@@ -12,6 +12,11 @@ p{
   font-family:Roboto;
 }
 
+.navbar-default .navbar-nav>li>a {
+  color: white;
+  font-size: 25px;
+}
+
 .navbar-default{
   background:black;
   border:0;
@@ -341,6 +346,9 @@ footer{
 
 .modal-body{
 left:250px;
+font-size:30px;
+text-align: justify;
+text-justify: inter-word;
 }
 
 div.modal-body p{
