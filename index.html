@@ -6,8 +6,11 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    
     <script src="js/animate-text.js"></script>
+    
   </head>
   
   <body style="border-left: 15px solid #a94442;" class="body">
@@ -26,8 +29,8 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#showcase">home</a></li>
             <li><a href="#info1">about me</a></li>
-            <li><a href="#contact">projects</a></li>
-            <li><a href="#contact">skills</a></li>
+            <li><a href="#info1">projects</a></li>
+            <li><a href="#testimonial1">skills</a></li>
             <li><a href="#contact">contact me</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -48,7 +51,7 @@
     <section id="showcase">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-sm-6">
+          <div id='myid' class="col-md-6 col-sm-6 col">
             <div class="showcase-left">
               <img src="https://d3irk3g7luh32r.cloudfront.net/wp-content/uploads/sites/5/2017/12/20170301155447.jpg">
             </div>
@@ -56,29 +59,72 @@
           <div class="col-md-6 col-sm-6">
             <div class="showcase-right">
               <h2>Aniruddh Singh Rathore</h2>
-              <p style="text-align: justify;text-justify: inter-word">I call myself a neat coder as I always think a program without proper indentation and documentation is something which isn't useful in the future. It's like when I do coding I don't think about anything else and get deeply involved in it. Though I got attracted to web developing not much time ago (3 years ), but I feel so deeply attached to it that I always think about it. It gives me great pleasure to work on projects. Three years of experience gave me a good knowledge of HTML, CSS, JavaScript, jQuery, Bootstrap, Angular2 and 4. On the database side, I learned MySql. The first professional database I made was a university conference management database which made me quite confident in building a good MySQL database. Learned GitHub to better fit in a company's team.</p>
+              <p style="text-align: justify;text-justify: inter-word">I call myself a neat coder as I always think a program without proper indentation and documentation is something which isn't useful in the future. It's like when I do coding I don't think about anything else and get deeply involved in it. Though I got attracted to web developing not much time ago...</p>
+              <br>
+              <a class="btn btn-default btn-lg" data-toggle="modal" data-target="#InfoModal">Continue Reading ...</a>
             </div>
             
           </div>
         </div>
       </div>
     </section>
+    <!--My Information Modal-->
+    <div id="InfoModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">A little about me !</h4>
+            </div>
+            <div class="modal-body" style="text-align: justify;text-justify: inter-word; font-size: 30px">
+              <p>I call myself a neat coder as I always think a program without proper indentation and documentation is 
+                something which isn't useful in the future. It's like when I do coding I don't think about anything else 
+                and get deeply involved in it. Though I got attracted to professional web developing not much time ago (3 years ), 
+                but I feel so deeply attached to it that I always think about it. It gives me great pleasure to work on projects. 
+                Three years of experience gave me a good knowledge of HTML, CSS, JavaScript, jQuery, Bootstrap, Angular 2. On the
+                 database side, I learned MySql. The first professional database I made was a university conference management 
+                 database which made me quite confident in building a good MySQL database. Learned GitHub to better fit in a 
+                 company's team.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+      
+        </div>
+      </div>
 
-    
+    <section id="testimonial" style="background-color: cyan">
+      <div class="container">
+        
+          <h1>
+            <a href="" class="typewrite" data-period="2000" data-type='["&#10048;My Projects&#10048;"]'>
+              <span class="wrap"></span>
+            </a>
+          </h1>
+      </div>
+    </section>
+
+    <!-- Projects-->
 
     <section id="info1" style="display: inline;">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-sm-6">
             <div class="info-left">
-              <img src="img/fullani.PNG" style="max-width: 90%; margin-left: 60px;margin-top: 90px">
+              <img src="img/marshallW.PNG" style="max-width: 90%; margin-left: 60px;margin-top: 90px">
             </div>
           </div>
           <div class="col-md-6 col-sm-6">
-            <div class="info-right">
-              <h2>Portfolio Website</h2>
-              <p> :) </p>
+            <div class="info-right" >
+              <h2>Marshall University Conference Management Tool</h2>
+              <p style="text-align: justify;text-justify: inter-word;">Implemented a management tool for academic events which will provide online access to host conferences, 
+                paper & poster presentations, symposiums. The admin will have a complete authorized access over the tool. The organizer holds 
+                the responsibility to make sure that the posted events are evaluated by the respected judges in an ethical way...  </p>
               <br>
+              <a class="btn btn-default btn-lg" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" onclick=""> Read More about this project</a>
               <a class="btn btn-default btn-lg" onclick="next()">Next >></a>
             </div>
           </div>
@@ -86,44 +132,306 @@
       </div>
     </section>
 
-    <section id="info3" style="display: none;max-width: 90%; margin-left: 60px;margin-top: 90px;" >
+    <section id="info3" style="display: none;" >
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-sm-6">
             <div class="">
-              <img src="img/image1.jpg">
+              <img src="img/fullani.PNG" style="max-width: 90%; margin-left: 60px;margin-top: 90px">
             </div>
           </div>
           <div class="col-md-6 col-sm-6">
-            <div class="">
+            <div class="info-right">
               <h2>New Content !</h2>
               <p>Content under construction :) </p>
               <br>
-              <a class="btn btn-default btn-lg">Read More</a>
+              <a class="btn btn-default btn-lg" data-toggle="modal" data-target="#pwModal">Read More about this project</a>
+              <a onclick="previous2()" class="btn btn-default btn-lg">Previous Project</a>
+              <a onclick="next2()" class="btn btn-default btn-lg" style="margin-top: 10px">Next Project >></a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <hr>
 
-
-    <section id="info2">
+    <section id="info4" style="display: none;" >
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-sm-6">
-            <div class="info-left">
-              <h2>Coming Soon !</h2>
-              <p>Content under construction !</p>
+            <div class="">
+              <img src="img/diversity.PNG" style="max-width: 90%; margin-left: 60px;margin-top: 90px">
             </div>
           </div>
           <div class="col-md-6 col-sm-6">
             <div class="info-right">
-              <h2>Content Coming Soon !</h2>
-              <p>Under Construction !</p>
+              <h2>Diversity Content !</h2>
+              <p>Content under construction :) </p>
+              <br>
+              <a onclick="" class="btn btn-default btn-lg" data-toggle="modal" data-target="#diversityModal">Read More ahout this project</a>
+              <a onclick="previous1()" class="btn btn-default btn-lg">Previous Project</a>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+<!--All Modal Contents-->
+
+
+<!--Conference Management Tool-->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Conference Management Tool</h4>
+            </div>
+            <div class="modal-body">
+              <img src="img/marshallW.PNG" style="max-width: 100%; max-height: 500px">
+              <p style="margin-top: 20px">A SIMPLE WEB APPLICATION THAT PROVIDES FACTS ON THE GREATES FOOTBALL TEAMS IN THE 20TH AND 
+                EARLY 21ST CENTURY WITH REAL STATISTICS. THE APPLICATION HOSTS A QUIZ SECTION WHERE ONE CAN 
+                CHALLEGE THEIR FOOTBALL KNOWLEDGE BY ANSWERING MULTIPLE CHOICE QUESTIONS BOTH THROUGH TEXT AND IMAGES.
+
+                  THE APPLICATION IS BUILT USING HTML5/CSS3, ANGULARJS AND BOOTSTRAP. THE APP IS POWERED BY GITHUB PAGES AND THE PROJECT FILES ARE AVAILABLE ON MY GITHUB ACCOUNT.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+
+      <!--Personal Website Modal-->
+
+      <div id="pwModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">My Personal Website</h4>
+              </div>
+              <div class="modal-body">
+                <img src="img/fullani.PNG" style="max-width: 100%; max-height: 500px">
+                <p style="margin-top: 20px">A SIMPLE WEB APPLICATION THAT PROVIDES FACTS ON THE GREATES FOOTBALL TEAMS IN THE 20TH AND 
+                  EARLY 21ST CENTURY WITH REAL STATISTICS. THE APPLICATION HOSTS A QUIZ SECTION WHERE ONE CAN 
+                  CHALLEGE THEIR FOOTBALL KNOWLEDGE BY ANSWERING MULTIPLE CHOICE QUESTIONS BOTH THROUGH TEXT AND IMAGES.
+  
+                    THE APPLICATION IS BUILT USING HTML5/CSS3, ANGULARJS AND BOOTSTRAP. THE APP IS POWERED BY GITHUB PAGES AND THE PROJECT FILES ARE AVAILABLE ON MY GITHUB ACCOUNT.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+        
+          </div>
+        </div>
+
+        <!--Diversity Initiative Modal-->
+        <div id="diversityModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+          
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Diversity Initiative</h4>
+                </div>
+                <div class="modal-body">
+                  <img src="img/diversity.PNG" style="max-width: 100%; max-height: 500px">
+                  <p style="margin-top: 20px">A SIMPLE WEB APPLICATION THAT PROVIDES FACTS ON THE GREATES FOOTBALL TEAMS IN THE 20TH AND 
+                    EARLY 21ST CENTURY WITH REAL STATISTICS. THE APPLICATION HOSTS A QUIZ SECTION WHERE ONE CAN 
+                    CHALLEGE THEIR FOOTBALL KNOWLEDGE BY ANSWERING MULTIPLE CHOICE QUESTIONS BOTH THROUGH TEXT AND IMAGES.
+    
+                      THE APPLICATION IS BUILT USING HTML5/CSS3, ANGULARJS AND BOOTSTRAP. THE APP IS POWERED BY GITHUB PAGES AND THE PROJECT FILES ARE AVAILABLE ON MY GITHUB ACCOUNT.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+    <hr>
+   
+
+  <!--My Skills Progress Circles-->
+
+    <section  id="testimonial1" style="background-color: grey">
+      <div class="container">
+        
+          <h1>
+            <a href="" class="typewrite" data-period="2000" data-type='["&#10048;My Skills Database?&#10048;"]'>
+              <span class="wrap"></span>
+            </a>
+          </h1>
+      </div>
+    </section>
+
+    <section >
+        <div class="container" style="margin-top: 60px">
+            <div class="row">
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="progress blue">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value"><i style="font-size: 105px; margin-top: 25px" class="fab fa-html5"></i></div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="progress yellow">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value"><i style="font-size: 105px; margin-top: 25px" class="fab fa-css3-alt"></i></div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="progress pink">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value"><i style="font-size: 98px; margin-top: 22px" class="fab fa-js"></i></div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="progress yellow">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">Bootstrap</div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6" style="margin-top: 15px">
+                    <div class="progress yellow">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">MySQL</div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6" style="margin-top: 15px">
+                    <div class="progress green">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">Angular 4</div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6" style="margin-top: 15px">
+                    <div class="progress orange">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">JQuery</div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6" style="margin-top: 15px">
+                    <div class="progress cyan">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">TypeScript</div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6" style="margin-top: 15px">
+                    <div class="progress blue">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">GitHub</div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6" style="margin-top: 15px">
+                    <div class="progress pink">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">React</div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6" style="margin-top: 15px">
+                    <div class="progress green">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">Express</div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6" style="margin-top: 15px">
+                    <div class="progress orange">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">Gulp</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!-- Contact -->
+    <section id="testimonial" style="background-color: yellow">
+      <div class="container">
+        
+          <h1>
+            <a href="" class="typewrite" data-period="2000" data-type='["&#10048;Feeling like to contact me ?&#10048;"]'>
+              <span class="wrap"></span>
+            </a>
+          </h1>
       </div>
     </section>
 
@@ -153,6 +461,11 @@
         </div>
       </div>
     </section>
+    
+
+    
+
+    
 
     <footer>
       <p class="text-center">ani &copy; 2017</p>
@@ -203,9 +516,7 @@
         });
         sr.reveal('.info-right', {
           duration: 2000,
-          origin:'right',
-          distance:'300px',
-          viewFactor: 0.2
+          origin:'right'
         });
         
 
@@ -230,8 +541,51 @@
 
     function next(){
       document.getElementById('info1').style.display = "none";
-      document.getElementById('info3').style.display = "inline";
+      document.getElementById('info3').style.display= "block";
+
     }
+
+    function next2(){
+      document.getElementById('info1').style.display = "none";
+      document.getElementById('info3').style.display= "none";
+      document.getElementById('info4').style.display = "block";
+
+    }
+
+     function previous1(){
+      document.getElementById('info1').style.display = "none";
+      document.getElementById('info3').style.display= "block";
+      document.getElementById('info4').style.display = "none";
+
+    }
+
+     function previous2(){
+      document.getElementById('info1').style.display = "block";
+      document.getElementById('info3').style.display= "none";
+      document.getElementById('info4').style.display = "none";
+
+    }
+    </script>
+    <script>
+      // progressbar.js@1.0.0 version is used
+// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+
+var bar = new ProgressBar.Line(contain, {
+  strokeWidth: 4,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#FFEA82',
+  trailColor: '#eee',
+  trailWidth: 1,
+  svgStyle: {width: '100%', height: '100%'},
+  from: {color: '#FFEA82'},
+  to: {color: '#ED6A5A'},
+  step: (state, bar) => {
+    bar.path.setAttribute('stroke', state.color);
+  }
+});
+
+bar.animate(1.0);  // Number from 0.0 to 1.0
     </script>
   </body>
 </html>
