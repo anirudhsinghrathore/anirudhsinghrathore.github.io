@@ -121,6 +121,10 @@ footer{
     max-width: 950px;
   }
 
+  div.modal-body img{
+    margin-left: 80px;
+  }
+
 * { color:black; text-decoration: none;}
 
 .info3class{
@@ -133,14 +137,27 @@ footer{
   padding-top: 10px;
   padding-bottom: 10px;}
 }
-
+div.modal-body img{
+  margin-left: 80px;
+}
 
 
 @media (max-width: 1200px) {
+  div.modal-body img{
+    margin-left: 70px;
+     max-width: 70% !important
+  }
+ }
+
+
+
+ @media (max-width: 1200px) {
   div.modal-body p {
     max-width: 750px !important;
   }
  }
+
+ 
 
  @media (max-width: 1050px) {
   div.modal-body p {
@@ -157,7 +174,7 @@ footer{
 
  @media (max-width: 840px) {
   div.modal-body img {
-    max-width: 70% !important;
+    max-width: 70% !important
     
   }
  }
@@ -404,7 +421,7 @@ text-justify: inter-word;
 }
 
 div.modal-body p{
-  max-width: 950px;
+  max-width: 1150px;
 }
 
 button.close{
@@ -419,11 +436,16 @@ button.close{
 
 .modal-footer{
   text-align: center;
+  border-top: none;
 }
 
 .modal-footer button{
   text-align: center;
   font-size: 50px;
+}
+
+.modal-header{
+  border-bottom: none !important;
 }
 
 @media (max-width: 600px) {
@@ -432,6 +454,8 @@ button.close{
   padding-top: 10px;
   padding-bottom: 10px;}
 }
+
+
 
 
   
