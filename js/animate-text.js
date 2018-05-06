@@ -56,31 +56,4 @@ var TxtType = function(el, toRotate, period) {
         document.body.appendChild(css);
     };
 
-    $(function() {
-        // Smooth Scrolling
-        $('a[href*="#"]:not([href="#"])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('html, body').animate({
-                scrollTop: target.offset().top
-              }, 1000);
-              return false;
-            }
-          }
-        });
-      });
-  
-      function next(){
-        document.getElementById('info1').style.display = "none";
-        document.getElementById('info3').style.display= "block";
-  
-      }
-  
-      function next2(){
-        document.getElementById('info1').style.display = "none";
-        document.getElementById('info3').style.display= "none";
-        document.getElementById('info4').style.display = "block";
-  
-      }
+   
