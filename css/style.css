@@ -48,6 +48,11 @@ p{
   font-family:Poppins;
 }
 
+#showcase .showcase-new{
+  margin-top:90px;
+  font-family:Poppins;
+}
+
 #testimonial{
   background:#f1f1f1;
   padding: 50px 0 30px 0;
@@ -455,6 +460,10 @@ button.close{
   padding-bottom: 10px;}
 }
 
+
+form{
+  margin-left: 50px;
+}
 
 
 
